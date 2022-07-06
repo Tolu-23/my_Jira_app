@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatibale" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Drag and Drop</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="modal" id="todo_form">
+            <div class="header">
+                <div class="title">Modal_Title</div>
+                <button class="btn modal-btn" data-target="#modal1">&times;</button>
+            </div>
+            <div class="body">
+                <input placeholder="name" type="text" id="todo_input" /><br>
+                <input type="submit" value="Add Todo" id="todo_submit" />
+            </div>
+        </div>
+        <div class="todo-container">
+            <div class="status" id="no_status">
+                <h2>No status</h2>
+                <button id="add_btn" data-target-modal="#todo_form">+ Add_item</button>
+                <!-- <div class="todo" draggable="true">
+                    
+                    <span class="close">&times;</span>
+                </div> -->
+            </div>
+            <div class="status">
+                <h2>Todo</h2>
+            </div>
+            <div class="status">
+                <h2>In Progress</h2>
+            </div>
+            <div class="status">
+                <h2>Done</h2>
+            </div>
+        </div>
+
+        <div id="overlay"></div>
+        <script src="app.js"></script>
+    </body>
+</html>
