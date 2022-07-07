@@ -3,14 +3,14 @@
 }
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    min-height: 100vh;
+    min-height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: baseline;
+    align-items:baseline;
 }
 .todo-container{
-    width: 1000px;
-    height: 80vh;
+    width: 75%;
+    height: 100%;
     display: flex;
 }
 .status{
@@ -26,8 +26,8 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    background-color: black;
-    color: rgba(236, 237, 238, 0.533);
+    background-color: rgb(1, 2, 18);
+    color:blanchedalmond;
     margin: 0;
     width: 100%;
     padding: 0.5rem 1rem;
@@ -67,7 +67,7 @@ body{
     color: #7d7e5e;
 }
 .todo .close:hover{
-    color: #000;
+    color: rgb(154, 35, 35);
 }
 .btn{
     padding: 0.5rem 1rem;
